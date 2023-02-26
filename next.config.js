@@ -1,8 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  assetPrefix: process.env.NODE_ENV === "production"
-    ? "https://lchoish.github.io/portfolio" : "",
-}
+  assetPrefix:
+      process.env.NODE_ENV === "production"
+          ? "https://LChoiSH.github.io/portfolio"
+          : "",
+  images: { unoptimized: true },
+};
 
 module.exports = nextConfig
