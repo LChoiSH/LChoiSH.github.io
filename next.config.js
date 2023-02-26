@@ -4,7 +4,10 @@ const nextConfig = {
       process.env.NODE_ENV === "production"
           ? "https://LChoiSH.github.io/portfolio"
           : "",
-  images: { unoptimized: true },
+  images: {
+    loader: 'imgix',
+    path: "https://LChoiSH.github.io/portfolio/"
+  },
 };
 
 module.exports = nextConfig
