@@ -1,0 +1,28 @@
+{
+  "plugins": ["stylelint-prettier"],
+  "extends": ["stylelint-config-standard-scss", "stylelint-config-recommended", "stylelint-config-prettier"],
+  "customSyntax": "postcss-scss",
+  "rules": {
+    "prettier/prettier": true,
+    "declaration-block-no-duplicate-properties": true,
+    "color-hex-length": "short",
+    "color-named": "never",
+    "number-max-precision": 2,
+    "length-zero-no-unit": true,
+    "block-no-empty": true,
+    "no-extra-semicolons": true,
+    "selector-class-pattern": null,
+    "at-rule-no-unknown": null,
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": ["global"]
+      }
+    ],
+    "selector-id-pattern": "",
+    "color-function-notation": "legacy",
+    "function-no-unknown": null,
+    "no-descending-specificity": null
+  },
+  "ignoreFiles": ["src/scss/sprites/*.scss", "src/scss/utils/_sprite_mixin.scss", "src/scss/utils/_mixin.scss", "src/scss/utils/_mixin_dark.scss"]
+}
