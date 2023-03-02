@@ -1,12 +1,13 @@
 /** @type {import('next').NextConfig} */
+
+const isProduction = process.env.NODE_ENV === "production";
+const productURL = "https://lchoish.github.io/portfolio/";
+
 const nextConfig = {
-  assetPrefix:
-      process.env.NODE_ENV === "production"
-          ? "https://LChoiSH.github.io/portfolio"
-          : "",
+  assetPrefix: isProduction ? productURL : "",
   images: {
     loader: 'imgix',
-    path: "https://LChoiSH.github.io/portfolio/"
+    path: isProduction ? productURL : "https://localhost:3000",
   },
 };
 
