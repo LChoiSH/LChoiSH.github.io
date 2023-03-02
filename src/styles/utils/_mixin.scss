@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+@mixin ellipsis {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@mixin ellipsisMulti($line:2, $line-height:20) {
+  display: block;
+  display: -webkit-box;
+  overflow: hidden;
+  max-height: $line-height*$line+px;
+  white-space: normal;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+  line-height: $line-height+px;
+}
+
+@mixin clearFix {
+  &:after {
+    display: block;
+    clear: both;
+    content: '';
+  }
+}
+
+@mixin blindClear {
+  overflow: initial;
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  clip: initial;
+}
+
+@mixin blindScrollBar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@mixin commonMediaQuery($media: '') {
+  @if $media == 'mobile-small' {
+    @media (max-width: 320px) {
+      @content;
+    }
+  }
+
+  @if $media == 'mobile' {
+    @media (max-width: 767px) {
+      @content;
+    }
+  }
+
+  @if $media == 'tablet' {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+
+  @if $media == 'mobile-to-tablet' {
+    @media (max-width: 1199px) {
+      @content;
+    }
+  }
+
+  @if $media == 'tablet-pc' {
+    @media (min-width: 768px) and (max-width: 1199px) {
+      @content;
+    }
+  }
+
+  @if $media == 'pc-wide' {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+}
