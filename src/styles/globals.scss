@@ -1,6 +1,16 @@
 @import './common/base';
+@import './common/fonts';
 @import './utils/mixin';
 
 body {
   background-color: #fff;
+
+  font-family: customFont, sans-serif;
+}
+
+.wrap {
+  color: #222;
+  padding-top: 80px;
+  min-height: 100vh;
+  box-sizing: border-box;
 }

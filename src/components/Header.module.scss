@@ -1,3 +1,53 @@
-.logo {
-  color: pink;
+@import '../styles/utils/mixin';
+
+.header {
+  position: fixed;
+  top: 0;
+  height: 80px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  .header_wrap {
+
+  }
+
+  .gnb_list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    .gnb_item {
+    }
+
+    .gnb {
+      display: block;
+      position: relative;
+      padding: 5px 10px;
+      font-size: 20px;
+      color: #555;
+      transition: color 0.3s;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        width: 0;
+        background-color: currentColor;
+        transition: width 0.3s;
+      }
+
+      &:hover {
+        color: #000;
+
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+
 }
