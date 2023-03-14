@@ -19,7 +19,7 @@ const ProjectList: NextPage<ProjectListProps> = ({ projectData }) => {
                     <li key={`project_${project.name}`} className={cx("project_item")}>
                         <a href="#" className={cx("project_detail_link")}>
                             <div className={cx("project_image_wrap")}>
-                                <img src={`image/project/${project.name.toLowerCase()}/${project.thumbnailSrc ? project.thumbnailSrc : project.detail[0].imageSrc}`} alt={`${project.name} 디테일 이미지`} className={cx("project_image")}/>
+                                <img src={`image/project/${project.name.toLowerCase()}${project.thumbnailSrc ? project.thumbnailSrc : project.detail[0].imageSrc}`} alt={`${project.name} 디테일 이미지`} className={cx("project_image")}/>
                             </div>
                             <div className={cx("project_info_wrap")}>
                                 <strong className={cx("project_title")}>{project.name}</strong>
