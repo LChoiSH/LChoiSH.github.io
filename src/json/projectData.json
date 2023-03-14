@@ -1,0 +1,79 @@
+[
+  {
+    "name": "Basic Shooting Game",
+    "summary": "Unreal로 공식다큐멘트와 책을 병행해가며 기초를 익힌 프로젝트입니다.",
+    "thumbnailSrc": "",
+    "date": "2023.01 ~ 2023.02",
+    "tag": ["Flutter", "FrontEnd"],
+    "detail": [
+      {
+        "title": "시작 모드",
+        "info": "로그인 후 다양한 주식들을 볼 수 있습니다",
+        "imageSrc": "/detail_1.png"
+      },
+      {
+        "title": "",
+        "info": "",
+        "imageSrc": ""
+      }
+    ]
+  },
+  {
+    "name": "StockMemo",
+    "summary": "주식에 관련된 주요정보들을 날짜별로 볼 수 있는 어플리케이션입니다.",
+    "thumbnailSrc": "",
+    "date": "2022.01 ~ 2022.11",
+    "tag": ["Flutter", "FrontEnd", "Team"],
+    "detail": [
+      {
+        "title": "메인 영역",
+        "info": "로그인 후 다양한 주식들을 볼 수 있습니다",
+        "imageSrc": "/detail_1.png"
+      },
+      {
+        "title": "",
+        "info": "",
+        "imageSrc": ""
+      }
+    ]
+  },
+  {
+    "name": "StockGG",
+    "summary": "주식에 익숙하지 않은 초보자들이 주요정보들을 게임스텟처럼 가볍게 볼 수 있는 웹서비스입니다.",
+    "thumbnailSrc": "",
+    "date": "2021.01 ~ 2021.9",
+    "tag": ["FrontEnd", "React", "Team"],
+    "detail": [
+      {
+        "title": "메인 영역",
+        "info": "로그인 후 다양한 주식들을 볼 수 있습니다",
+        "imageSrc": "/detail_1.png"
+      },
+      {
+        "title": "",
+        "info": "",
+        "imageSrc": ""
+      }
+    ]
+  },
+  {
+    "name": "ClubRadio",
+    "summary": "자기 주변에 공연이 예정되어 있는 DJ의 곡을 웹스트리밍 해주는 서비스입니다.",
+    "thumbnailSrc": "",
+    "date": "2020.01 ~ 2022.12",
+    "tag": ["FrontEnd", "React", "Team", "Google Analytics"],
+    "detail": [
+      {
+        "title": "메인 영역",
+        "info": "로그인 후 다양한 주식들을 볼 수 있습니다",
+        "imageSrc": "/detail_1.png"
+      },
+      {
+        "title": "",
+        "info": "",
+        "imageSrc": ""
+      }
+    ]
+  }
+
+]

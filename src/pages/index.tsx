@@ -1,12 +1,21 @@
+import { useContext } from 'react';
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import classNames from "classnames/bind";
 import styles from './index.module.scss';
+import PortfolioContext from "../../context/context";
+import ProjectList from "@/components/home/ProjectList";
+import ExperienceList from "@/components/home/ExperienceList";
+
+import projectData from "../json/projectData.json";
+import experieceData from "../json/experienceData.json";
 
 const cx = classNames.bind(styles);
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+
+    const { prefix } = useContext(PortfolioContext);
+
   return (
     <>
         <div className={cx("animation_intro")}>
@@ -18,7 +27,7 @@ export default function Home() {
         <section className={cx('section_my')}>
             <h3 className="blind">인적사항</h3>
             <div className={cx("my_image_wrap")}>
-                <img src="/image/home/home_my.jpeg" alt="home my image" className={cx("my_image")} />
+                <img src={`${prefix}/image/home/home_my.jpeg`} alt="home my image" className={cx("my_image")} />
             </div>
             <dl className={cx("my_dl")}>
                 <dt className={cx('my_dt')}>Contact</dt>
@@ -36,102 +45,11 @@ export default function Home() {
         </section>
         <section className={cx('section_project')}>
             <h2 className={cx("section_title")}>Project</h2>
-            <ul className={cx("project_list")}>
-                <li className={cx("project_item")}>
-                    <a href="#" className={cx("project_detail_link")}>
-                        <div className={cx("project_image_wrap")}>
-                            <img src="https://via.placeholder.com/300x300" alt="임시 이미지" className={cx("project_image")}/>
-                        </div>
-                        <div className={cx("project_info_wrap")}>
-                            <strong className={cx("project_title")}>Stock Memo</strong>
-                            <p className={cx("project_date")}></p>
-                            <ul className={cx("tag_list")}>
-                                <li className={cx("tag_item")}>FrontEnd</li>
-                                <li className={cx("tag_item")}>App Developer</li>
-                            </ul>
-                            <p className={cx("product_more")}>More Info</p>
-                        </div>
-                    </a>
-                </li>
-                <li className={cx("project_item")}>
-                    <a href="#" className={cx("project_detail_link")}>
-                        <div className={cx("project_image_wrap")}>
-                            <img src="https://via.placeholder.com/300x300" alt="임시 이미지" className={cx("project_image")}/>
-                        </div>
-                        <div className={cx("project_info_wrap")}>
-                            <strong className={cx("project_title")}>Stock Memo</strong>
-                            <ul className={cx("tag_list")}>
-                                <li className={cx("tag_item")}>FrontEnd</li>
-                                <li className={cx("tag_item")}>App Developer</li>
-                            </ul>
-                            <p className={cx("product_more")}>More Info</p>
-                        </div>
-                    </a>
-                </li>
-                <li className={cx("project_item")}>
-                    <a href="#" className={cx("project_detail_link")}>
-                        <div className={cx("project_image_wrap")}>
-                            <img src="https://via.placeholder.com/300x300" alt="임시 이미지" className={cx("project_image")}/>
-                        </div>
-                        <div className={cx("project_info_wrap")}>
-                            <strong className={cx("project_title")}>Stock Memo</strong>
-                            <ul className={cx("tag_list")}>
-                                <li className={cx("tag_item")}>FrontEnd</li>
-                                <li className={cx("tag_item")}>App Developer</li>
-                            </ul>
-                            <p className={cx("product_more")}>자세히 보기</p>
-                        </div>
-                    </a>
-                </li>
-                <li className={cx("project_item")}>
-                    <a href="#" className={cx("project_detail_link")}>
-                        <div className={cx("project_image_wrap")}>
-                            <img src="https://via.placeholder.com/300x300" alt="임시 이미지" className={cx("project_image")}/>
-                        </div>
-                        <div className={cx("project_info_wrap")}>
-                            <strong className={cx("project_title")}>Stock Memo</strong>
-                            <ul className={cx("tag_list")}>
-                                <li className={cx("tag_item")}>FrontEnd</li>
-                                <li className={cx("tag_item")}>App Developer</li>
-                            </ul>
-                            <p className={cx("product_more")}>자세히 보기</p>
-                        </div>
-                    </a>
-                </li>
-            </ul>
+            <ProjectList projectData={projectData} />
         </section>
-        <section className={cx('section_intro')}>
-            <h3 className={cx('title')}>교육</h3>
-            <div>
-                experience
-                DDoS
-                Bootcamp
-            </div>
-            <div>
-                <ul className={cx("list_project")}>
-                    <li className={cx("item_project")}>
-                        <div className={cx("thumb_image_wrap")}>
-                            <img src="https://via.placeholder.com/200x200" alt="임시 이미지"/>
-                        </div>
-                        <div className={cx("info_wrap")}>
-                            <strong className={cx("project_title")}>StockMemo</strong>
-                            <p className={cx("project_info")}>분류: Frontend</p>
-                            <p className={cx("project_info")}>역할: </p>
-                        </div>
-                        <a href="#">자세히보기</a>
-                    </li>
-                </ul>
-                project + 자세히 보기
-
-                StockMemo
-
-                StockGG
-
-                ClubRadio
-            </div>
-            <div>
-                skills
-            </div>
+        <section className={cx('section_experience')}>
+            <h2 className={cx('section_title')}>Experience</h2>
+            <ExperienceList experienceData={experieceData} />
         </section>
     </>
   )
