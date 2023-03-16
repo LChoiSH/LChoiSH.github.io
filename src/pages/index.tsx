@@ -24,7 +24,7 @@ export default function Home() {
                 최성훈의 페이지입니다
             </h2>
         </div>
-        <section className={cx('section_my')}>
+        <section id={"index-my"} className={cx('section_my')}>
             <h3 className="blind">인적사항</h3>
             <div className={cx("my_image_wrap")}>
                 <img src={`${prefix}/image/home/home_my.jpeg`} alt="home my image" className={cx("my_image")} />
@@ -43,11 +43,11 @@ export default function Home() {
                 <dd className={cx('my_dd')}><strong>Markup Developer</strong> 2020.01 ~ </dd>
             </dl>
         </section>
-        <section className={cx('section_project')}>
+        <section id={"index-project"} className={cx('section_project')}>
             <h2 className={cx("section_title")}>Project</h2>
             <ProjectList projectData={projectData} />
         </section>
-        <section className={cx('section_experience')}>
+        <section id={"index-experience"} className={cx('section_experience')}>
             <h2 className={cx('section_title')}>Experience</h2>
             <ExperienceList experienceData={experieceData} />
         </section>
