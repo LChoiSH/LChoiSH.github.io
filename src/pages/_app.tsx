@@ -12,7 +12,6 @@ function App({ Component, pageProps }: AppProps) {
     const lastScrollY = useRef(typeof window !== 'undefined' ? window.scrollY : 0);
 
     const handleScroll = throttle(() => {
-        console.log(lastScrollY);
         // 1. 이전 scroll 값과 동일한 값이 들어온 경우 무시 (hash link로 이동 시 불필요한 스크롤 이벤트 발생하는 경우 존재)
         // 2. iOS의 elastic scroll 때문에 scrollY 값이 음수가 되거나 전체 높이보다 높게 넘어가는 경우가 있으므로
         //    그 사이 값일 때만 scroll event를 적용하도록 제한
