@@ -4,18 +4,71 @@
   gap: 20px;
 
   .item_experience {
+    position: relative;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgb(0 0 0 / 70%);
 
+    &.is_open {
+      .info_wrap {
+        display: block;
+      }
+    }
+
+    & + .item_experience {
+      margin-top: 50px;
+    }
+  }
+
+  .button_open {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    .ico_open {
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin: 40px;
+    }
+  }
+
+  .info_wrap {
+    margin-top: 20px;
+    display: none;
+
+    &::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+
+  .image_wrap {
+    float: left;
+    width: 250px;
+    margin-right: 20px;
+
+    .experience_image {
+      width: 100%;
+      height: auto;
+    }
   }
 
   .experience_title {
-
+    font-size: 30px;
   }
 
   .experience_date {
-
+    margin-top: 4px;
+    font-size: 20px;
   }
 
   .experience_info {
-
+    overflow: hidden;
+    font-size: 24px;
+    white-space: pre-line;
+    word-break: keep-all;
   }
 }

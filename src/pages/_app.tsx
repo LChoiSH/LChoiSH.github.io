@@ -1,4 +1,4 @@
-import '@/styles/globals.scss'
+import '@/styles/globals.scss';
 import type { AppProps } from 'next/app'
 import { PortfolioProvider } from "../../context/context"
 import Header from "../components/Header";

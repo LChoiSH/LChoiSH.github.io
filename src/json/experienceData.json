@@ -3,5 +3,11 @@
     "name": "DDoS Research on IoT at University of California, Irvine",
     "date": "2019.06 ~ 2019.12",
     "info": "University of California, Irvine 에서 참여한 연구입니다.\nIoT의 DDoS 공격에 대한 취약점에 대해 연구하였습니다.\nIoT 기계들을 공격하기 위한 코딩을 하고, 실제 DDoS 공격을 위하여 다양한 시도를 하였습니다."
+  },
+  {
+    "name": "2019 Silicon Vally BootCamp",
+    "date": "2018.12 ~ 2019.03",
+    "info": "미국 실리콘 밸리에서 구글, 페이스북 등 다양한 기업의 현직자들에게 멘토링을 받으며 실제 기업의 프로세스대로 빠르게 제품을 만들어보는 부트캠프였습니다.\n 프로젝트성을 띄기는 했지만 빠른 템포와 체계적인 작업방식이 기존 프로젝트들과 달랐습니다.\n 저는 풀스텍 엔지니어로 참여하였습니다.\n 저희 팀은 성폭행피해자들을 도울 수 있는 어플리케이션에 초점을 맞추고 제작하였습니다.",
+    "thumbnailSrc": "/bootcamp/detail_1.png"
   }
 ]
