@@ -29,10 +29,13 @@
     left: 0;
 
     .ico_open {
+      width: 15px;
+      height: 15px;
       position: absolute;
       right: 0;
       top: 0;
-      margin: 40px;
+      bottom: 0;
+      margin: auto 40px auto 0;
     }
   }
 
@@ -82,7 +85,23 @@
     box-sizing: border-box;
 
     .item_experience {
-      //width: 100%;
+      padding-right: 40px;
+    }
+
+    .experience_title {
+      font-size: 20px;
+    }
+
+    .button_open {
+      .ico_open {
+        margin-right: 20px;
+      }
+    }
+
+    .image_wrap {
+      width: 100%;
+      float: none;
+      margin-bottom: 20px;
     }
   }
 }
