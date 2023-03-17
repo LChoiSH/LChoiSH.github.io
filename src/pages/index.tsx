@@ -27,7 +27,7 @@ export default function Home() {
         <section id={"index-my"} className={cx('section_my')}>
             <h3 className="blind">인적사항</h3>
             <div className={cx("my_image_wrap")}>
-                <img src={`${prefix}/image/home/home_my.jpeg`} alt="home my image" className={cx("my_image")} />
+                <img src={`${prefix}/assets/image/home/home_my.jpeg`} alt="home my image" className={cx("my_image")} />
             </div>
             <dl className={cx("my_dl")}>
                 <dt className={cx('my_dt')}>Contact</dt>

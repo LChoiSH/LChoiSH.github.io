@@ -34,7 +34,7 @@ function ExperienceItem({ experience }: ExperienceItemProps): JSX.Element {
                 {experience.thumbnailSrc ?
                     (
                         <div className={cx("image_wrap")}>
-                            <img src={`image/experience${experience.thumbnailSrc}`} alt={`${experience.name} 이미지`} className={cx("experience_image")} width={100} height={100} />
+                            <img src={`assets/image/experience${experience.thumbnailSrc}`} alt={`${experience.name} 이미지`} className={cx("experience_image")} width={100} height={100} />
                         </div>
                     )
                     :
