@@ -1,3 +1,5 @@
+@import "../../styles/utils/mixin";
+
 .list_experience {
   margin: 30px auto 0;
   width: 940px;
@@ -70,5 +72,17 @@
     font-size: 24px;
     white-space: pre-line;
     word-break: keep-all;
+  }
+}
+
+@include commonMediaQuery('mobile') {
+  .list_experience {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+
+    .item_experience {
+      //width: 100%;
+    }
   }
 }

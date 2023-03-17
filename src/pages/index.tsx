@@ -31,6 +31,7 @@ export default function Home() {
             </div>
             <dl className={cx("my_dl")}>
                 <dt className={cx('my_dt')}>Contact</dt>
+                <dd className={cx('my_dd')}>+82-010-2056-9616</dd>
                 <dd className={cx('my_dd')}><a href="mailto:csh42504@gmail.com" className={cx("email_link")}>csh42504@gmail.com</a></dd>
                 <dt className={cx('my_dt')}>Education</dt>
                 <dd className={cx('my_dd')}>국민대학교 소프트웨어학과 (2018 ~ 2020) (졸업)</dd>

@@ -21,7 +21,7 @@ const ProjectList: NextPage<ProjectListProps> = ({ projectData }) => {
             {projectData.map((project) => {
                 return (
                     <li key={`project_${project.name}`} className={cx("project_item")}>
-                        <a href="#" className={cx("project_detail_link")}>
+                        <a href="#!" className={cx("project_detail_link")}>
                             <div className={cx("project_image_wrap")}>
                                 <img src={`assets/image/project/${spaceToUnderline(project.name)}${project.thumbnailSrc ? project.thumbnailSrc : project.detail[0].imageSrc}`} alt={`${project.name} 디테일 이미지`} className={cx("project_image")}/>
                             </div>
